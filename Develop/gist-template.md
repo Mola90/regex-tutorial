@@ -1,11 +1,13 @@
-# Title (replace with your title)
+# Title Regular Expressions, a brief explenation
 
-Introductory paragraph (replace this with your text)
+Regular expressions or regex for short is an arrangement of characters and symbols that define a search parameter.
+unlike other methods found in JavaScript which requrie exact matches, regular expressions allow for for complex and 
+search queries.
 
 ## Summary
 
 Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
-
+One popular regular expression found in industry is the regex for matching an email. For this reason I be describing all the parts of this expression.
 ## Table of Contents
 
 - [Anchors](#anchors)
@@ -24,7 +26,11 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Anchors
 
+The email match expression starts of with caret symbol. This symbol is known as a position anchor and is use to 
+assert that the any matches found need to start at this point.
 ### Quantifiers
+Qunatifiers specify how many times a proceding element should be matched. In our example we + quantifier which means match
+patterns one or more times.
 
 ### OR Operator
 
@@ -33,6 +39,10 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ### Flags
 
 ### Grouping and Capturing
+Grouping is used to group parts of a pattern together. In our example the brackets are stating that lower case letters
+a/z, digits 0-9, _, . and - are allowed in any matches. The email matching regression has a second grouping. In this next
+section, the expression is matching the domain part of the email address. It is doing this by matching strings that are 
+lower case, between a-z and are allowed to contain dots and hyphens.
 
 ### Bracket Expressions
 
